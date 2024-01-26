@@ -19,3 +19,10 @@ def ThreeNumSum(num1 , num2 , num3):
 
 
 ThreeNumSum(7,7,7)
+
+def fourNumSum(num1 , num2 , num3 ,  num4):
+    result = num1 + num2 + num3 + num4
+    print(result)
+
+
+fourNumSum(7,7,7,7)
