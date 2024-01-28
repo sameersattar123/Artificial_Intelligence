@@ -52,5 +52,14 @@
 
 # print("Expected Result:",result_dic)
 
+# Exercise: List Comprehensions
+# (i)Write a list comprehension which, from a list, generates a lowercased version of each string that has
+# length greater than five. 
 
+
+# original_list = ["ali" , "sameer", "sattar" , "wasey" , "rehman" , "ashar"]
+
+# lowercase_long_words = [word.lower() for word in original_list if len(word) > 5]
+
+# print(lowercase_long_words)
 

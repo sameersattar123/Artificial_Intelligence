@@ -14,6 +14,7 @@ marks.insert(6,88)
 print(marks) # [22, 33, 44, 55, 66, 77, 88]
 
 myMarks = [22, 33, 44, 55, 66, 77, 88]
+print(len(myMarks))
 
 i = 0
 while i < len(myMarks):
