@@ -1,3 +1,5 @@
+import datetime
+
 # Exercise 1
 # Perform the given operations
 # I. a Python program to square and cube every number in a given list of integers using Lambda. 
@@ -23,6 +25,26 @@ print(starts_with_char("sameer", "S"))
 
 
 # III. a Python program to extract year, month, date and time using Lambda.
+
+Datetime = datetime.datetime.now()
+
+extractYear = lambda dt: dt.year
+extractMonth = lambda dt: dt.month
+extractDay = lambda dt: dt.day
+extractTime = lambda dt: dt.time()
+
+year = extractYear(Datetime)
+month = extractMonth(Datetime)
+day =  extractDay(Datetime)
+time = extractTime(Datetime)
+
+print("Year:", year)
+print("Month:", month)
+print("Day:", day)
+print("Time:", time)
+
+
+
 
 
 
