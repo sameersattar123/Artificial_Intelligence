@@ -1,48 +1,51 @@
 import datetime
+from math import sqrt
+import time
+import random
 
 # Exercise 1
 
 # Perform the given operations
 # I. a Python program to square and cube every number in a given list of integers using Lambda. 
 
-# numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 
-# square = lambda x: x * x 
-# cube = lambda x: x * x * x
+square = lambda x: x * x 
+cube = lambda x: x * x * x
 
-# squared_numbers = list(map(square, numbers))
-# cubed_numbers = list(map(cube, numbers))
+squared_numbers = list(map(square, numbers))
+cubed_numbers = list(map(cube, numbers))
 
-# print("Original numbers:", numbers)
-# print("Squared numbers:", squared_numbers)
-# print("Cubed numbers:", cubed_numbers)
+print("Original numbers:", numbers)
+print("Squared numbers:", squared_numbers)
+print("Cubed numbers:", cubed_numbers)
 
 # # II. a Python program to find if a given string starts with a given character using Lambda.
 
-# starts_with_char = lambda string, char: string.startswith(char)
+starts_with_char = lambda string, char: string.startswith(char)
 
-# print(starts_with_char("sameer", "s"))
-# print(starts_with_char("sameer", "S"))
+print(starts_with_char("sameer", "s"))
+print(starts_with_char("sameer", "S"))
 
 
 # III. a Python program to extract year, month, date and time using Lambda.
 
-# Datetime = datetime.datetime.now()
+Datetime = datetime.datetime.now()
 
-# extractYear = lambda dt: dt.year
-# extractMonth = lambda dt: dt.month
-# extractDay = lambda dt: dt.day
-# extractTime = lambda dt: dt.time()
+extractYear = lambda dt: dt.year
+extractMonth = lambda dt: dt.month
+extractDay = lambda dt: dt.day
+extractTime = lambda dt: dt.time()
 
-# year = extractYear(Datetime)
-# month = extractMonth(Datetime)
-# day =  extractDay(Datetime)
-# time = extractTime(Datetime)
+year = extractYear(Datetime)
+month = extractMonth(Datetime)
+day =  extractDay(Datetime)
+time = extractTime(Datetime)
 
-# print("Year:", year)
-# print("Month:", month)
-# print("Day:", day)
-# print("Time:", time)
+print("Year:", year)
+print("Month:", month)
+print("Day:", day)
+print("Time:", time)
 
 # Exercise 2
 
@@ -75,6 +78,36 @@ f.close()
 f = open("student.txt", "a")
 f.write("Now we are AI students")
 f.close()
+
+
+x = sqrt(4)
+print(x)
+
+y =  sqrt(9)
+print(y)
+
+currentTime = time.time()
+
+print(time.ctime(currentTime))
+
+time.sleep(2) # waits for at least s seconds and then returns
+
+print(time.ctime())
+
+randomNumbers = random.randint(1,10)
+
+print(randomNumbers)
+
+nums = [1,2,3,2,3,4,6,7,8,8,9]
+
+random.shuffle(nums)
+
+print(nums)
+
+print(random.sample(nums,2))
+
+
+
 
 
 
