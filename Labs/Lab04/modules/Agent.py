@@ -3,12 +3,10 @@ from abc import abstractmethod
 class Agent(object):
 
  @abstractmethod 
- def __init__(self):
-   pass
+ def __init__(self): pass
  
 @abstractmethod
-def sense(self,environment): 
-   pass
+def sense(self,environment): pass
  
 @abstractmethod 
 def act(self):

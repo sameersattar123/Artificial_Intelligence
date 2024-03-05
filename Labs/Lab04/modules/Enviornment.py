@@ -1,5 +1,5 @@
 from abc import abstractmethod
-class Environment(object):
+class Environment:
  
  @abstractmethod
  def __init__(self, n):

@@ -1,6 +1,6 @@
-from Lab04.Agent import Agent
+from modules.Agent import Agent
 
-class VaccumAgent(Agent.Agent):
+class VaccumAgent(Agent):
  def __init__(self): 
      pass
  def sense(self,env):
